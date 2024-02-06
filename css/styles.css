@@ -27,6 +27,30 @@ body {
   letter-spacing: 0.14px;
 }
 
+.gradient {
+  background-image: linear-gradient(
+    to right,
+    #b16cea 0%,
+    #e26399 25%,
+    #ff8259 75%,
+    #ffa44c 100%
+  );
+}
+
+.gradient-text {
+  background-clip: text;
+  color: transparent;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  width: fit-content;
+  border-radius: 15px;
+  text-decoration: none;
+  color: #f0f2f5;
+  border: 1px solid #161513;
+}
+
 /* header styling */
 ul {
   list-style: none;
@@ -49,12 +73,59 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  border-bottom: 1px solid #161513;
 }
 
 #logo {
   position: absolute;
   left: 0;
-  margin-left: 2rem;
+  margin-left: 10%;
+}
+
+/* Home Styling */
+#home {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  height: 90vh;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.heading-hero {
+  font-size: 3rem;
+  text-align: left;
+}
+
+.hero-image {
+  margin-left: 10%;
+  width: 40%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+}
+
+.home-desc {
+  text-align: left;
+  width: 80%;
+  margin-top: -1rem;
+}
+
+#project-btn {
+  color: #161513;
+}
+
+.btn-container {
+  display: flex;
+  gap: 2rem;
 }
 
 /* Services Styling */
