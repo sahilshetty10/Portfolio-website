@@ -1,3 +1,33 @@
+body {
+  font-family: "IBM Plex Mono", monospace;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.heading {
+  font-family: "roboto", sans-serif;
+  font-weight: 800;
+  color: #161513;
+  text-align: center;
+}
+
+.heading-main {
+  font-size: 2rem;
+}
+
+.heading-secondary {
+  font-size: 1.5rem;
+}
+
+.desc {
+  text-align: center;
+  line-height: 1.71;
+  letter-spacing: 0.14px;
+}
+
+/* header styling */
 ul {
   list-style: none;
   margin: 0;
@@ -6,20 +36,82 @@ ul {
   justify-items: center;
   gap: 100px;
 }
+
 li > a {
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
   color: #1c1c22;
 }
+
 nav {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem;
 }
+
 #logo {
   position: absolute;
   left: 0;
   margin-left: 2rem;
+}
+
+/* Services Styling */
+
+#services {
+  margin: auto;
+  width: 60%;
+}
+
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.service {
+  margin-top: 2rem;
+  transition: 0.5s;
+}
+
+.service:hover {
+  scale: 1.1;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+#graphic-design-image {
+  border: 2px solid #161513;
+  border-radius: 15px;
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-image: url("../assets/graphic-design.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+#web-development-image {
+  border: 2px solid #161513;
+  border-radius: 15px;
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-image: url("../assets/web-dev.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+#ui-ux-image {
+  border: 2px solid #161513;
+  border-radius: 15px;
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-image: url("../assets/uiux.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+/* footer styling */
+#footer {
+  margin-top: 3rem;
+  text-align: center;
 }
