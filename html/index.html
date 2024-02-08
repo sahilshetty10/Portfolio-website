@@ -11,6 +11,9 @@
     />
     <link rel="stylesheet" href="../css/styles.css" />
     <title>Sahil Shetty - Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   </head>
   <body>
     <!-- Header element -->
@@ -38,7 +41,7 @@
       <section id="home">
         <div class="home-container">
           <h1 class="heading heading-hero">
-            Hello I'm
+            Hello, I'm
             <span class="gradient gradient-text">Sahil</span>,<br />A full-stack
             <br />developer based in<br /><span class="gradient gradient-text"
               >Canada</span
@@ -65,7 +68,7 @@
           cumque.
         </p>
         <div class="service-container">
-          <div class="service">
+          <div class="service" id="service-1">
             <div id="graphic-design-image"></div>
             <h3 class="heading heading-secondary">Graphic Design</h3>
             <p class="desc">
@@ -73,7 +76,7 @@
               at!
             </p>
           </div>
-          <div class="service">
+          <div class="service" id="service-2">
             <div id="web-development-image"></div>
             <h3 class="heading heading-secondary">Web Development</h3>
             <p class="desc">
@@ -81,7 +84,7 @@
               Cupiditate, nisi!
             </p>
           </div>
-          <div class="service">
+          <div class="service" id="service-3">
             <div id="ui-ux-image"></div>
             <h3 class="heading heading-secondary">UI/UX Design</h3>
             <p class="desc">
@@ -99,7 +102,7 @@
           voluptas est, adipisci fugit exercitationem tempore. Hic officiis ex
           cumque.
         </p>
-        <div class="project-container">
+        <div class="project-container" id="project-1">
           <div class="project-desc">
             <h3 class="heading heading-secondary">Project 1</h3>
             <p class="desc">
@@ -116,7 +119,7 @@
             alt="movie project picture"
           />
         </div>
-        <div class="project-container">
+        <div class="project-container" id="project-2">
           <img
             class="project-img"
             draggable="false"
@@ -143,7 +146,7 @@
           cumque.
         </p>
         <div class="blog-container">
-          <div class="article">
+          <div class="article" id="article-1">
             <img
               class="article-img"
               draggable="false"
@@ -157,7 +160,7 @@
             </p>
             <a href="./blog-view.html" class="gradient btn">Read More</a>
           </div>
-          <div class="article">
+          <div class="article" id="article-2">
             <img
               class="article-img"
               draggable="false"
@@ -171,7 +174,7 @@
             </p>
             <a href="./blog-view.html" class="gradient btn">Read More</a>
           </div>
-          <div class="article">
+          <div class="article" id="article-3">
             <img
               class="article-img"
               draggable="false"
@@ -196,7 +199,7 @@
           cumque.
         </p>
         <div class="testimonial-container">
-          <div class="testimonial-element">
+          <div class="testimonial-element" id="testimonial-1">
             <p class="desc desc-testimonial">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius,
               reprehenderit.
@@ -206,7 +209,7 @@
               <h3 class="heading heading-secondary">Client Name</h3>
             </div>
           </div>
-          <div class="testimonial-element">
+          <div class="testimonial-element" id="testimonial-2">
             <p class="desc desc-testimonial">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius,
               reprehenderit.
@@ -216,7 +219,7 @@
               <h3 class="heading heading-secondary">Client Name</h3>
             </div>
           </div>
-          <div class="testimonial-element">
+          <div class="testimonial-element" id="testimonial-3">
             <p class="desc desc-testimonial">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius,
               reprehenderit.
@@ -226,7 +229,7 @@
               <h3 class="heading heading-secondary">Client Name</h3>
             </div>
           </div>
-          <div class="testimonial-element">
+          <div class="testimonial-element" id="testimonial-4">
             <p class="desc desc-testimonial">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius,
               reprehenderit.
@@ -286,4 +289,5 @@
       <p class="desc" id="footer">Made with &hearts; by Sahil Shetty</p>
     </footer>
   </body>
+  <script src="../js/main.js"></script>
 </html>
